@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)numberTouched:(id)sender;
 
 @end
 
@@ -26,4 +27,6 @@
 }
 
 
+- (IBAction)numberTouched:(id)sender {
+}
 @end
