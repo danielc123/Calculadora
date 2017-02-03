@@ -68,6 +68,9 @@
                                                 <state key="normal" title="/">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="dividedTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="g1H-XF-GIm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -109,6 +112,9 @@
                                                 <state key="normal" title="*">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="multiplyTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="c0C-pE-ASM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -121,7 +127,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="numberTouched:" destination="rdD-Z3-Faq" eventType="touchUpOutside" id="G1E-AO-R82"/>
+                                                    <action selector="numberTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="kUk-LM-NZj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvR-po-lpX">
@@ -151,7 +157,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="numberTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="e4O-tf-SPY"/>
+                                                    <action selector="minusTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="aMM-6g-HHn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -174,6 +180,9 @@
                                                 <state key="normal" title="AC">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="acTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="TQx-Sc-JBn"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCh-gN-hob">
                                                 <color key="backgroundColor" red="1" green="0.16846272179999999" blue="0.18711540700000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,6 +190,9 @@
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="equalTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="Svf-eE-ME9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNW-8W-vcA">
                                                 <color key="backgroundColor" red="1" green="0.16846272179999999" blue="0.18711540700000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -188,6 +200,9 @@
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="plusTouched:" destination="rdD-Z3-Faq" eventType="touchUpInside" id="CsV-oa-7Rh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -202,6 +217,9 @@
                             <constraint firstItem="PmT-PK-ANe" firstAttribute="top" secondItem="RSh-NC-rcE" secondAttribute="bottom" constant="10" id="RD3-0n-yQo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="hs4-m0-8wn" id="S5j-zK-kzf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdf-Tj-8eh" sceneMemberID="firstResponder"/>
             </objects>
